@@ -3,8 +3,8 @@ const router = express.Router()
 
 
 
-router.get('/', (req, res) => {
-    res.send('events router workingggg')
+router.get('/new', (req, res) => {
+    res.render('events/new')
 })
 
 module.exports = router

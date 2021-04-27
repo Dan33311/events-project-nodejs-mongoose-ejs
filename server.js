@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
         createdAt: new Date(),
         description: 'Test description 222'
     }]
-    res.render('index', { events: events })
+    res.render('events/index', { events: events })
 })
 
 app.use('/events', eventsRouter)
