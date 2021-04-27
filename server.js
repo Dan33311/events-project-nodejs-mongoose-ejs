@@ -17,20 +17,12 @@ try {
 }
 
 app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended: false }))
 
-app.get('/', (req, res) => {
-    const events = [{
-        title: 'Test tile',
-        createdAt: new Date(),
-        description: 'Test description'
-    },
-    {
-        title: 'Test tile 222',
-        createdAt: new Date(),
-        description: 'Test description 222'
-    }]
+app.get('/', async (req, res) => {
+    const events = await Event.find().sort({ createdAt: 'desc' })
     res.render('events/index', { events: events })
-})
+  })
 
 app.use('/events', eventsRouter)
 
