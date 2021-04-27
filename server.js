@@ -1,7 +1,20 @@
+require('dotenv').config()
 const express = require('express');
+const mongoose = require('mongoose');
+const Event = require('./models/event');
 const eventsRouter = require('./routes/events')
 const app = express()
 
+
+mongoose.connect(process.env.DB_URI, { 
+  useUnifiedTopology: true,
+  useNewUrlParser: true
+})
+try {
+  console.log('Database connected');
+} catch (error) {
+  console.log(error);
+}
 
 app.set('view engine', 'ejs')
 
