@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express');
 const mongoose = require('mongoose');
+const methodOverride = require('method-override')
 const Event = require('./models/event');
 const eventsRouter = require('./routes/events')
 const app = express()
@@ -8,7 +9,8 @@ const app = express()
 
 mongoose.connect(process.env.DB_URI, { 
   useUnifiedTopology: true,
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useCreateIndex: true
 })
 try {
   console.log('Database connected');
@@ -18,6 +20,7 @@ try {
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
+app.use(methodOverride('_method'))
 
 app.get('/', async (req, res) => {
     const events = await Event.find().sort({ createdAt: 'desc' })
