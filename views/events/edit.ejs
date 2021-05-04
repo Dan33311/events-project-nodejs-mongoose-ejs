@@ -13,17 +13,17 @@
 <body>
 
   <div class="container">
-    <h1 class="mt-4 mb-1"><%= event.title %> </h1>
-    <div class="text-muted"><%= event.createdAt.toLocaleDateString() %> </div>
-
-    <a href="/" class="btn btn-secondary mt-2 mb-2">All Events</a>
-    <a href="/events/edit/<%= event.id %>" class="btn btn-info mt-2 mb-2">Edit</a>
-    <div class="container border border-secondary rounded mt-4">
-      <div class="mx-2 mt-4"><%- event.sanitizedHtml %> </div>
-    </div>
+    <h1 class="mt-4 mb-4">Edit Event</h1>
     
+    <form action="/events/<%= event.id %>?_method=PUT" method="POST">
+    
+      <%- include('_form_fields') %> 
+
+    </form>
+
   </div>
 
+  
 </body>
 
 
