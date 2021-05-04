@@ -8,19 +8,19 @@ _Add basic info and use the **Markdown** box for add some style info_
 ## View
 ***
 _There is some views **CRUD** for the diferent app functions._
-* Landing Page: 
+* Landing Page:<br>
 ![](images/1.jpg)
 
-* Create a new event:
+* Create a new event:<br>
 ![](images/2.jpg)
 
-* Adding info (markdown box):
+* Adding info (markdown box):<br>
 ![](images/3.jpg)
 
-* Single event:
+* Single event:<br>
 ![](images/4.jpg)
 
-* Edit an event:
+* Edit an event:<br>
 ![](images/5.jpg)
 
 ***
