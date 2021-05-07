@@ -4,6 +4,8 @@ _This app allow us view a basic info about Fighting Games events, tournaments an
 
 _Add basic info and use the **Markdown** box for add some style info_
 
+_This project is based on **Web Dev Simplified YouTube** Channel project_
+
 
 ## View
 ***
@@ -49,4 +51,6 @@ $ cd ../path/to/the/file
 $ npm install
 $ npm start
 ```
-Side information: Working on Heroku that will allow us to use the application.
+Side information: Running on Heroku that will allow us to use the application.
+
+https://markdown-fighting-games-events.herokuapp.com/
