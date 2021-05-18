@@ -22,9 +22,9 @@
               <div class="card-subtitle text-muted mb-2"><%= event.createdAt.toLocaleDateString() %> </div>
               <div class="card-text mb-2"><%= event.description %> </div>
               <a href="events/<%= event.slug %>" class="btn btn-primary">More info</a>
-              <a href="events/edit/<%= event.id %>" class="btn btn-info">Edit</a>
+              <!-- <a href="events/edit/<%= event.id %>" class="btn btn-info">Edit</a> -->
               <form action="/events/<%= event.id %>?_method=DELETE" method="POST" class="d-inline">
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <!-- <button type="submit" class="btn btn-danger">Delete</button> -->
               </form>
             </div>
           </div>

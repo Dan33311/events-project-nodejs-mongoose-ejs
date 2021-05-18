@@ -22,7 +22,7 @@ _There is some views **CRUD** for the diferent app functions._
 * Single event:<br>
 ![](images/4.jpg)
 
-* Edit an event:<br>
+* Edit an event: (logged user function)<br>
 ![](images/5.jpg)
 
 ***
@@ -35,12 +35,12 @@ A list of technologies used within the project:
 * [MongoDB](https://www.mongodb.com/) - Database
 * [Mongoose](https://mongoosejs.com/) - Modeling MongoDB
 * [EJS](https://github.com/mde/ejs) - Frontend
-* [dotenv](https://github.com/motdotla/dotenv#readme) - Environment variables 
-* [dompurify](https://github.com/cure53/DOMPurify) - Sanitizer for HTML
-* [jsdom](https://github.com/jsdom/jsdom#readme) - pure-JavaScript implementation
 * [marked](https://marked.js.org/) - markdown features
-* [method-override](https://github.com/expressjs/method-override#readme) - Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
+* [dompurify](https://github.com/cure53/DOMPurify) - Sanitizer for HTML
 * [slugify](https://github.com/simov/slugify) - ID to slug
+* [method-override](https://github.com/expressjs/method-override#readme) - Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
+* [jsdom](https://github.com/jsdom/jsdom#readme) - pure-JavaScript implementation
+* [dotenv](https://github.com/motdotla/dotenv#readme) - Environment variables 
 
 ## Installation
 ***
