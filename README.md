@@ -1,6 +1,8 @@
 # Markdown - Fighting Games Events
 ***
-_This app allow us view a basic info about Fighting Games events, tournaments and competitons, you could publish your own event, edit and deleted it_
+_This application allows the user to write text using Markdown syntax and display stylish text elements such as headings, paragraphs, lists, links and many more._
+
+_In this case use the app for users to create events (Fighting Games Events, Tournaments and competitions), view other events, also you could edit and deleted your event._
 
 _Add basic info and use the **Markdown** box for add some style info_
 
