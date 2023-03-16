@@ -53,6 +53,7 @@ $ cd ../path/to/the/file
 $ npm install
 $ npm start
 ```
-Side information: Running on Heroku that will allow us to use the application.
 
-https://markdown-fighting-games-events.herokuapp.com/
+Side information: Running on render.com that will allow us to use the application.
+
+https://markdown-crud-nodejs.onrender.com/
